@@ -1,0 +1,14 @@
+#Python提供了try...except...finally的方式来处理代码异常，当然还有其他组合的方式。
+
+a, b = 1,0
+
+try:
+    print(a/b)
+except ZeroDivisionError:
+    print("Can not divide by zero")
+finally:
+    print("Executing finally block")
+    
+ #输出：
+ Can not divide by zero
+Executing finally block
