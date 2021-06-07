@@ -1,0 +1,18 @@
+#删除列表中重复项一般可以通过遍历来筛选去重，或者直接使用集合方法。
+
+list1 = [1,2,3,3,4,'John', 'Ana', 'Mark', 'John']
+
+# 方法1
+def remove_duplicate(list_value):
+    return list(set(list_value))
+print(remove_duplicate(list1))
+
+# 方法2
+result = []
+[result.append(x) for x in list1 if x not in result]
+print(result)
+
+#输出：
+
+[1, 2, 3, 4, 'Ana', 'John', 'Mark']
+[1, 2, 3, 4, 'John', 'Ana', 'Mark']
