@@ -1,0 +1,11 @@
+def Merge(dict1, dict2): 
+    res = {**dict1, **dict2} 
+    return res 
+      
+# 两个字典
+dict1 = {"name": "Joy", "age": 25}
+dict2 = {"name": "Joy", "city": "New York"}
+dict3 = Merge(dict1, dict2) 
+print(dict3)
+
+#Python3.5之后，合并字典变得容易起来。我们可以通过**符号解压字典，并将多个字典传入{}中，实现合并。
