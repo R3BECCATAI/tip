@@ -1,0 +1,15 @@
+#在一行代码中调用多个函数。
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+a, b = 5, 10
+
+print((add if b > a else subtract)(a,b))
+
+#输出：
+
+15
