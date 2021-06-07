@@ -1,0 +1,12 @@
+#在使用列表的时候，有时会需要取最后一个元素，有下面几种方式可以实现。
+
+my_list = ['banana', 'apple', 'orange', 'pineapple']
+
+#索引方法
+last_element = my_list[-1]
+
+#pop方法
+last_element = my_list.pop()
+
+#输出
+'pineapple'
