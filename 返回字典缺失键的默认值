@@ -1,0 +1,12 @@
+#字典中的get方法用于返回指定键的值，如果键不在字典中返回默认值 None 或者设置的默认值。
+
+dict = {1:'one', 2:'two', 4:'four'}
+
+#returning three as default value
+print(dict.get(3, 'three'))
+
+print("原始字典:", dict) 
+
+#输出：
+three
+原始字典: {1: 'one', 2: 'two', 4: 'four'}
