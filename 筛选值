@@ -1,0 +1,10 @@
+#python中的filter方法可以用来进行值的筛选。
+
+my_list = [0,1,2,3,6,7,9,11]
+
+result = filter(lambda x: x % 2!=0, my_list)
+
+print(list(result))
+
+#输出
+[1, 3, 7, 9, 11]
