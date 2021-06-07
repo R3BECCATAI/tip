@@ -1,0 +1,10 @@
+#使用join方法将字符串列表组成单个字符串。
+list = ["Hello", "world", "Ok", "Bye!"]
+combined_string = " ".join(list)
+
+print(combined_string)
+
+#输出
+
+Hello world Ok Bye!
+
