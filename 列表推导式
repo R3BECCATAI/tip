@@ -1,0 +1,10 @@
+#列表推导式是for循环的简易形式，可以在一行代码里创建一个新列表，同时能通过if语句进行判断筛选
+
+def get_vowels(string):
+    return [vowel for vowel in string if vowel in 'aeiou'] 
+
+print("Vowels are:", get_vowels('This is some random string'))
+
+#输出：
+
+Vowels are:  ['i', 'i', 'o', 'e', 'a', 'o', 'i']
