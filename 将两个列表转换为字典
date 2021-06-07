@@ -1,0 +1,16 @@
+#有两个列表，将列表A里的元素作为键，将列表B里的对应元素作为值，组成一个字典。
+
+
+def list_to_dictionary(keys, values):
+  return dict(zip(keys, values))
+
+list1 = [1, 2, 3]
+list2 = ['one', 'two', 'three']
+
+print(list_to_dictionary(list1, list2))
+
+#输出：
+
+{1: 'one', 2: 'two', 3: 'three'}
+
+
