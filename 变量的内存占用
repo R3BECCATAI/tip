@@ -1,0 +1,14 @@
+#如何输出python中变量的内存占用大小，可以通过sys模块来实现。
+
+import sys
+
+var1 = 15
+list1 = [1,2,3,4,5]
+
+print(sys.getsizeof(var1))
+print(sys.getsizeof(list1))
+
+#输出
+
+28
+104
