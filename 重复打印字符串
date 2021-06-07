@@ -1,0 +1,7 @@
+n = 5
+string = "Hello!"
+
+print(string * n)
+
+#输出
+Hello!Hello!Hello!Hello!Hello!
