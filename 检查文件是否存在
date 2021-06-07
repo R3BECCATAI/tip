@@ -1,0 +1,13 @@
+#我们知道Python有专门处理系统交互的模块-os，它可以处理文件的各种增删改查操作。
+
+#那如何检查一个文件是否存在呢？os模块可以轻松实现。
+from os import path
+
+def check_for_file():
+    print("Does file exist:", path.exists("data.csv"))
+
+if __name__=="__main__":
+    check_for_file()
+    
+   #输出
+   Does file exist: False
