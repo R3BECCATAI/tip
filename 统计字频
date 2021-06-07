@@ -1,0 +1,9 @@
+#判断字符串每个元素出现的次数，可以用collections模块中的Counter方法来实现，非常简洁。
+
+from collections import Counter
+result = Counter('banana')
+print(result)
+
+#输出：
+
+Counter({'a': 3, 'n': 2, 'b': 1})
