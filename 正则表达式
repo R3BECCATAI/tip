@@ -1,0 +1,11 @@
+#正则表达式用来匹配处理字符串，python中的re模块提供了全部的正则功能。
+
+import re
+
+text = "The rain in spain"
+result = re.search("rain", text)
+
+print(True if result else False)
+
+#输出：
+True
