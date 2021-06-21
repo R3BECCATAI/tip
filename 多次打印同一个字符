@@ -1,5 +1,0 @@
-tem = 'I Love Python '
-
-print(tem * 3)
-
-I Love Python I Love Python I Love Python
