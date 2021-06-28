@@ -1,0 +1,175 @@
+怎么计算2的3次方
+
+解法1:直接用运算符 **
+>>> 2**3
+8
+
+
+解法2:用函数 pow
+>>> pow(2,3)
+8
+
+
+怎么找出序列中的最大最小值？
+
+用内置函数 max 和 min
+>>> l = (123, 888, 666)
+>>> max(l)
+888
+>>> min(l)
+123
+
+
+怎么将字符列表转为字符串
+
+用 join 方法，合并序列的元素
+>>> l = ['Python', 'Circle', 'is', 'ok']
+>>> j = ' '.join(l)
+>>> j
+'Python Circle is ok'
+
+
+怎么快速打印出包含所有 ASCII 字母（大写和小写）的字符串
+
+用 string 模块的方法
+>>> import string
+>>> string.ascii_letters
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+
+怎么让字符串居中
+
+用字符串中的 center 方法，他会在两边自动填充字符（默认为空格），让字符串居中
+ k = 'helloworld'
+ k.center(50)
+ '                    helloworld                    '
+ k.center(50, '*')
+ '********************helloworld********************'
+
+
+怎么在字符串中找到子串
+
+用 find 方法，如果找到，就返回子串的第一个字符的索引，否则返回 -1
+>>> ss = 'I Love Python'
+>>> ss.find('I')
+0
+>>> ss.find('Python')
+7
+
+
+怎么让字符的首字母大写，其他字母小写
+
+解法1:用 title 方法。
+>>> ss = 'i love python'
+>>> ss.title()
+'I Love Python'
+
+解法2:用 string 模块里的 capwords 方法。
+>>> import string
+>>> ss = 'i love python'
+>>> string.capwords(ss)
+'I Love Python'
+
+
+
+怎么清空列表内容
+
+解法1:用 clear 方法
+>>> l = [1, 2, 3]
+>>> l.clear()
+>>> l
+[]
+
+解法2:用切片赋值的方法
+>>> k = [1, 2, 3]
+>>> k[:] = []
+>>> k
+[]
+
+
+怎么计算指定的元素在列表中出现了多少次？
+
+用 count 方法
+>>> l = ['i', 'am', 'ok', 'ok']
+>>> l.count('ok')
+2
+
+
+怎么在列表末尾加入其它元素
+
+>>> l = [1, 2, 3]
+>>> j = [4, 5, 6]
+>>> l.extend(j)
+>>> l
+[1, 2, 3, 4, 5, 6]
+
+
+extend 和列表相加的区别？
+
+两者看起来效果一致
+>>> l = [1, 2, 3]
+>>> j = [4, 5, 6]
+>>> l + j
+[1, 2, 3, 4, 5, 6]
+
+extend 是直接在 l 列表里加入元素，相加会生成一个新元素，并不会对 l 做修改。
+
+怎么查找列表中某个元素第一次出现的索引，从 0 开始
+
+用 index 方法
+>>> l = ['are', 'you', 'ok']
+>>> l.index('you')
+1
+
+
+
+怎么将一个对象插入到列表中
+
+解法1：用 insert 方法
+>>> num = [1, 2, 4, 5]
+>>> num.insert(2, 'three')
+>>> num
+[1, 2, 'three', 4, 5]
+
+解法2：用切片的方式插入
+>>> num = [1, 2, 4, 5]
+>>> num[2:2] = ['three']
+>>> num
+[1, 2, 'three', 4, 5]
+
+
+
+怎么删除列表中元素
+
+pop 方法可以删除指定元素，不指定位置的话默认删除最后一个元素
+>>> num = [1, 2, 4, 5]
+>>> num.pop()
+5
+>>> num
+[1, 2, 4]
+>>> num.pop(1)
+2
+>>> num
+[1, 4]
+
+
+怎么删除列表中指定元素
+
+用 remove 方法
+>>> num
+[1, 4]
+>>> num = [1, 2, 4, 5, 4]
+>>> num.remove(4)
+>>> num
+[1, 2, 5, 4]
+
+remove 方法只会删除第一次出现的元素
+
+怎么让列表按相反顺序排列？
+
+解法1：用 reverse 方法
+>>> num = [1, 22, 45, 99, 49]
+>>> num.reverse()
+>>> num
+[49, 99, 45, 22, 1]
+
